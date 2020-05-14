@@ -115,12 +115,6 @@ class AIMAEnv(gym.Env):
         # Book grid
         self.grid = AIMAGrid()
 
-        # Place a goal square in the bottom-right corner
-        self.put_obj(Goal(), width - 2, 1)
-
-        # Place the lava at (4,2)
-        self.put_obj(Lava(), 4, 2)
-
         # Window to use for human rendering mode
         self.window = None
         self.agent_start_pos = (1,3)
